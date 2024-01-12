@@ -1,4 +1,5 @@
 import './App.css'
+import React, {useState} from 'react';
 import {Routes, Route} from "react-router-dom"
 import { Box } from '@mui/material';
 
@@ -7,6 +8,7 @@ import Footer from './components/Footer';
 
 import ExerciseDetail from './pages/ExerciseDetail'
 import Home from './pages/Home'
+import Sender from './components/Sender';
 
 function App() {
 
@@ -16,6 +18,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/exercises" element={<Sender />} />
           <Route path="/exercise/:id" element={<ExerciseDetail />} />
         </Routes>
         <Footer />
