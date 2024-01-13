@@ -32,7 +32,7 @@ const Detail = ({ exerciseDetail }) => {
           <Typography sx={{ fontSize: { lg: '50px', xs: '30px' } }} fontWeight={700} textTransform="capitalize">
             {name}
           </Typography>
-          <Typography sx={{ fontSize: { lg: '20px', xs: '18px' } }} color="#ffcdcd">
+          <Typography sx={{ fontSize: { lg: '20px', xs: '18px' } }} color="#ffffff">
             Exercises keep you strong.{' '}
             <span style={{ textTransform: 'capitalize' }}>{name}</span> bup is one
             of the best <br /> exercises to target your {target}. It will help you improve your{' '}
