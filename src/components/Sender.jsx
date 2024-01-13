@@ -6,6 +6,7 @@ const Sender = () => {
 
 const [exercises, setExercises] = useState([]);
   const [bodyPart, setBodyPart] = useState('all');
+  
 
   return (
     <>

@@ -8,7 +8,7 @@ import Loader from './Loader';
 
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [exercisesPerPage] = useState(6);
+  const [exercisesPerPage] = useState(8);
 
   // console.log(exercises);
   useEffect(() => {
@@ -48,7 +48,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           <ExerciseCard key={idx} exercise={exercise} />
         ))}
       </Stack>
-      <Stack sx={{ mt: { lg: '114px', xs: '70px' } }} alignItems="center">
+      <Stack sx={{ mt: { lg: '114px', xs: '70px' } }} alignItems="center" color="white">
         {exercises.length > 9 && (
           <Pagination
             color="standard"
