@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Stack, Typography } from '@mui/material';
-import HeroBannerImage from '../assets/images/hero.png'
+import HeroBannerImage from '../assets/images/hero.svg'
 
 
 const HeroBanner = () => (
@@ -15,7 +15,7 @@ const HeroBanner = () => (
       Check out the most effective exercises personalized to you
     </Typography>
     <Stack>
-      <a href="/exercises" style={{ marginTop: '45px', textDecoration: 'none', width: '300px', textAlign: 'center', background: '#FF2625', padding: '14px', fontSize: '22px', textTransform: 'none', color: 'white', borderRadius: '4px' }}>
+      <a href="/exercises" style={{ marginTop: '45px', textDecoration: 'none', width: '300px', textAlign: 'center', background: '#810000', padding: '14px', fontSize: '22px', textTransform: 'none', color: 'white', borderRadius: '4px' }}>
         Explore Exercises
       </a>
     </Stack>

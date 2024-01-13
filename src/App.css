@@ -2,9 +2,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
-    background: linear-gradient(220deg, #81ccff, #648eaa, #921f6f, #1d2830);
+    /* background: linear-gradient(220deg, #81ccff, #648eaa, #921f6f, #1d2830); */
     /* background-color: rgb(20, 20, 32); */
-    /* background: url('./assets//images/back.png'); */
+    background: url('./assets/images/back6.svg');
 
     background-size: cover;
     background-attachment: fixed;
