@@ -8,7 +8,7 @@ import Loader from './Loader';
 
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [exercisesPerPage] = useState(8);
+  const [exercisesPerPage] = useState(6);
 
   // console.log(exercises);
   useEffect(() => {
@@ -41,17 +41,17 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   if (!currentExercises.length) return <Loader />;
 
   return (
-    <Box id="exercises" sx={{ mt: { lg: '109px' } }} mt="50px" p="20px">
-      <Typography variant="h4" fontWeight="bold" sx={{ fontSize: { lg: '44px', xs: '30px' } }} mb="46px">Showing Results</Typography>
-      <Stack direction="row" sx={{ gap: { lg: '107px', xs: '50px' } }} flexWrap="wrap" justifyContent="center">
+    <Box sx={{ mt: { lg: '109px' } }} mt="30px" p="20px">
+      <Typography variant="h4" fontWeight="bold" sx={{ fontSize: { lg: '44px', xs: '30px' } }} mb="35px" ml="20px">Showing Results</Typography>
+      <Stack direction="row" sx={{ gap: { lg: '107px', xs: '80px' } }} flexWrap="wrap" justifyContent="center">
         {currentExercises.map((exercise, idx) => (
           <ExerciseCard key={idx} exercise={exercise} />
         ))}
       </Stack>
-      <Stack sx={{ mt: { lg: '114px', xs: '70px' } }} alignItems="center" color="white">
+      <Stack sx={{ mt: { lg: '114px', xs: '70px'}, color: '#fff' }} alignItems="center" >
         {exercises.length > 9 && (
           <Pagination
-            color="standard"
+            color="secondary"
             shape="rounded"
             defaultPage={1}
             count={Math.ceil(exercises.length / exercisesPerPage)}
